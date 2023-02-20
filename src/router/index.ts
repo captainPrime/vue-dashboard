@@ -21,6 +21,7 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import("@/views/Dashboard.vue"),
         meta: {
           pageTitle: "Allocated Routers",
+          breadcrumbs: ["Routers"],
         },
       },
       {

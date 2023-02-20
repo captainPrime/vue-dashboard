@@ -1,6 +1,10 @@
 <template>
+  <div>
   <!--begin::Tables Widget 9-->
-  <div class="card" :class="widgetClasses">
+  <PageTitle />
+  <Button class="btn btn-primary" style="float: right; margin-top: -40px; " type="button"
+> + Add Media</Button>
+  <div class="card" :class="widgetClasses" style="margin-top: 30px">
     <div v-if="loading" >
       <div class="spinner-border text-primary" role="status">
         <span class="visually-hidden">Loading...</span>
@@ -8,6 +12,7 @@
     </div>
     <div v-if="!loading">
       <!--begin::Header-->
+    
       <div class="card-header border-0 pt-5">
         <h3 class="card-title align-items-start flex-column">
           <span class="card-label fw-bold fs-3 mb-1">Files</span>
@@ -143,11 +148,13 @@
       <!--begin::Body-->
     </div>
   </div>
+</div>
   <!--end::Tables Widget 9-->
 </template>
 
 <script lang="ts">
 import { getAssetPath } from "@/core/helpers/assets";
+import PageTitle from "@/layouts/main-layout/page-title/PageTitle.vue";
 import { defineComponent, onMounted, ref } from "vue";
 import { config } from "@/core/helpers/config";
 import CodeHighlighter from "@/components/highlighters/CodeHighlighter.vue";
@@ -158,7 +165,9 @@ import axios from "axios";
 
 export default defineComponent({
   name: "files",
-  components: {},
+  components: {
+    PageTitle
+  },
   props: {
     widgetClasses: String,
   },

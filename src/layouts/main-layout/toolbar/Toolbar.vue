@@ -10,7 +10,7 @@
       }"
       class="d-flex flex-stack"
     >
-      <PageTitle />
+     <span></span>
 
       <!--begin::Actions-->
       <div class="d-flex align-items-center flex-wrap">

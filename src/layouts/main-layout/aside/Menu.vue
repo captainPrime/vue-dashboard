@@ -31,13 +31,8 @@
                   v-if="item.svgIcon "
                   class="menu-icon me-0"
                 >
-                  <i
-                    v-if="asideMenuIcons === 'font'"
-                    :class="item.fontIcon"
-                    class="bi fs-2"
-                  ></i>
                   <span
-                    v-else-if="asideMenuIcons === 'svg'"
+                    
                     class="svg-icon svg-icon-2"
                   >
                     <inline-svg :src="item.svgIcon" />

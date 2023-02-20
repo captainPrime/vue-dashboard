@@ -1,5 +1,8 @@
 <template>
-  <div class="row gy-5 g-xl-8">
+  <div>
+    <!--begin::Tables Widget 9-->
+    <PageTitle />
+  <div class="row gy-5 g-xl-8" style="margin-top: 30px">
    
       <MixedWidget6
         widget-classes="card-xl-stretch"
@@ -8,16 +11,18 @@
       />
     
   </div>
+  </div>
 </template>
 
 <script lang="ts">
 import { getAssetPath } from "@/core/helpers/assets";
 import MixedWidget6 from "@/components/widgets/mixed/Widget6.vue";
+import PageTitle from "@/layouts/main-layout/page-title/PageTitle.vue";
 import { defineComponent, onMounted, ref } from "vue";
 
 export default defineComponent({
   name: "billings",
-  components: { MixedWidget6 },
+  components: { MixedWidget6, PageTitle },
   props: {
     widgetClasses: String,
   },

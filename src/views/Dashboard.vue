@@ -1,7 +1,9 @@
 <template>
-
+  <div>
+    <!--begin::Tables Widget 9-->
+    <PageTitle />
 <div>
-  <div class="row gy-5 g-xl-8">
+  <div class="row gy-5 g-xl-8" style="margin-top: 30px">
     
       <TablesWidget9 widget-classes="card-xxl-stretch mb-5 mb-xl-8" />
     
@@ -27,12 +29,14 @@
   </div>
 
 </div>
+</div>
  
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import StatisticsWidget5 from "@/components/widgets/statsistics/Widget5.vue";
+import PageTitle from "@/layouts/main-layout/page-title/PageTitle.vue";
 import Widget3 from "@/components/widgets/charts/Widget3.vue";
 import MixedWidget4 from "@/components/widgets/mixed/Widget4.vue";
 import MixedWidget5 from "@/components/widgets/mixed/Widget5.vue";
@@ -48,6 +52,7 @@ export default defineComponent({
   components: {
     StatisticsWidget5,
     Widget3,
+    PageTitle,
     MixedWidget4,
     MixedWidget5,
     ListsWidget7,

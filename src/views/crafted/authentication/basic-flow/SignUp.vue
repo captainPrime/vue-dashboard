@@ -12,87 +12,64 @@
       <!--begin::Heading-->
       <div class="mb-10 text-center">
         <!--begin::Title-->
-        <h1 class="text-dark mb-3">Create an Account</h1>
+        <h1 class="text-dark mb-3">Sign Up</h1>
         <!--end::Title-->
 
         <!--begin::Link-->
-        <div class="text-gray-400 fw-semobold fs-4">
-          Already have an account?
-
-          <router-link to="/sign-in" class="link-primary fw-bold">
-            Sign in here
-          </router-link>
+        <div
+          class="text-gray-400 fw-semobold fs-4"
+          style="font-weight: 600; color: #468365 !important"
+        >
+          ARED SME Platform
         </div>
         <!--end::Link-->
       </div>
-      <!--end::Heading-->
-
-      <!--begin::Action-->
-      <button type="button" class="btn btn-light-primary fw-bold w-100 mb-10">
-        <img
-          alt="Logo"
-          :src="getAssetPath('media/svg/brand-logos/google-icon.svg')"
-          class="h-20px me-3"
+     
+      <!--begin::Col-->
+      <div class="fv-row mb-7">
+        <!--   <label class="form-label fw-bold text-dark fs-6">First Name</label> -->
+        <Field
+          class="form-control form-control-lg form-control-solid"
+          type="text"
+          placeholder="First Name"
+          name="first_name"
+          autocomplete="off"
         />
-        Sign in with Google
-      </button>
-      <!--end::Action-->
-
-      <!--begin::Separator-->
-      <div class="d-flex align-items-center mb-10">
-        <div class="border-bottom border-gray-300 mw-50 w-100"></div>
-        <span class="fw-semobold text-gray-400 fs-7 mx-2">OR</span>
-        <div class="border-bottom border-gray-300 mw-50 w-100"></div>
-      </div>
-      <!--end::Separator-->
-
-      <!--begin::Input group-->
-      <div class="row fv-row mb-7">
-        <!--begin::Col-->
-        <div class="col-xl-6">
-          <label class="form-label fw-bold text-dark fs-6">First Name</label>
-          <Field
-            class="form-control form-control-lg form-control-solid"
-            type="text"
-            placeholder=""
-            name="first_name"
-            autocomplete="off"
-          />
-          <div class="fv-plugins-message-container">
-            <div class="fv-help-block">
-              <ErrorMessage name="first_name" />
-            </div>
+        <div class="fv-plugins-message-container">
+          <div class="fv-help-block">
+            <ErrorMessage name="first_name" />
           </div>
         </div>
-        <!--end::Col-->
+      </div>
+      <!--end::Col-->
 
-        <!--begin::Col-->
-        <div class="col-xl-6">
-          <label class="form-label fw-bold text-dark fs-6">Last Name</label>
-          <Field
-            class="form-control form-control-lg form-control-solid"
-            type="text"
-            placeholder=""
-            name="last_name"
-            autocomplete="off"
-          />
-          <div class="fv-plugins-message-container">
-            <div class="fv-help-block">
-              <ErrorMessage name="last_name" />
-            </div>
+      <!--begin::Col-->
+      <div class="fv-row mb-7">
+        <!--  <label class="form-label fw-bold text-dark fs-6">Last Name</label> -->
+        <Field
+          class="form-control form-control-lg form-control-solid"
+          type="text"
+          placeholder="Last Name"
+          name="last_name"
+          autocomplete="off"
+        />
+        <div class="fv-plugins-message-container">
+          <div class="fv-help-block">
+            <ErrorMessage name="last_name" />
           </div>
         </div>
-        <!--end::Col-->
       </div>
+      <!--end::Col-->
+
       <!--end::Input group-->
 
       <!--begin::Input group-->
       <div class="fv-row mb-7">
-        <label class="form-label fw-bold text-dark fs-6">Email</label>
+        <!--  <label class="form-label fw-bold text-dark fs-6">Email</label> -->
         <Field
           class="form-control form-control-lg form-control-solid"
           type="email"
-          placeholder=""
+          placeholder="Email"
           name="email"
           autocomplete="off"
         />
@@ -102,107 +79,97 @@
           </div>
         </div>
       </div>
-      <!--end::Input group-->
-
-      <!--begin::Input group-->
-      <div class="mb-10 fv-row" data-kt-password-meter="true">
-        <!--begin::Wrapper-->
-        <div class="mb-1">
-          <!--begin::Label-->
-          <label class="form-label fw-bold text-dark fs-6"> Password </label>
-          <!--end::Label-->
-
-          <!--begin::Input wrapper-->
-          <div class="position-relative mb-3">
-            <Field
-              class="form-control form-control-lg form-control-solid"
-              type="password"
-              placeholder=""
-              name="password"
-              autocomplete="off"
-            />
-            <div class="fv-plugins-message-container">
-              <div class="fv-help-block">
-                <ErrorMessage name="password" />
-              </div>
-            </div>
-          </div>
-          <!--end::Input wrapper-->
-          <!--begin::Meter-->
-          <div
-            class="d-flex align-items-center mb-3"
-            data-kt-password-meter-control="highlight"
-          >
-            <div
-              class="flex-grow-1 bg-secondary bg-active-success rounded h-5px me-2"
-            ></div>
-            <div
-              class="flex-grow-1 bg-secondary bg-active-success rounded h-5px me-2"
-            ></div>
-            <div
-              class="flex-grow-1 bg-secondary bg-active-success rounded h-5px me-2"
-            ></div>
-            <div
-              class="flex-grow-1 bg-secondary bg-active-success rounded h-5px"
-            ></div>
-          </div>
-          <!--end::Meter-->
-        </div>
-        <!--end::Wrapper-->
-        <!--begin::Hint-->
-        <div class="text-muted">
-          Use 8 or more characters with a mix of letters, numbers & symbols.
-        </div>
-        <!--end::Hint-->
-      </div>
-      <!--end::Input group--->
-
-      <!--begin::Input group-->
-      <div class="fv-row mb-5">
-        <label class="form-label fw-bold text-dark fs-6"
-          >Confirm Password</label
-        >
+      <div class="fv-row mb-7">
+        <!--  <label class="form-label fw-bold text-dark fs-6">Email</label> -->
         <Field
           class="form-control form-control-lg form-control-solid"
-          type="password"
-          placeholder=""
-          name="password_confirmation"
+          type="tel"
+          placeholder="Phone No"
+          name="phone"
           autocomplete="off"
         />
         <div class="fv-plugins-message-container">
           <div class="fv-help-block">
-            <ErrorMessage name="password_confirmation" />
+            <ErrorMessage name="" />
           </div>
         </div>
       </div>
-      <!--end::Input group-->
 
-      <!--begin::Input group-->
-      <div class="fv-row mb-10">
-        <label class="form-check form-check-custom form-check-solid">
-          <Field
-            class="form-check-input"
-            type="checkbox"
-            name="toc"
-            value="1"
-          />
-          <span class="form-check-label fw-semobold text-gray-700 fs-6">
-            I Agree &
-            <a href="#" class="ms-1 link-primary">Terms and conditions</a>.
-          </span>
-        </label>
+      <div class="fv-row mb-7">
+        <!--  <label class="form-label fw-bold text-dark fs-6">Email</label> -->
+        <Field
+          class="form-control form-control-lg form-control-solid"
+          type="text"
+          placeholder="Select Partner"
+          name="partner"
+          as="select"
+          v-slot="{ value }"
+        >
+          <option value="" disabled>Select Partner</option>
+          <option value="">Uganda SMC</option>
+          <option value="">Nigeria SMC</option>
+          <option value="">Senegal SMC</option>
+        </Field>
+
+        <div class="fv-plugins-message-container">
+          <div class="fv-help-block">
+            <ErrorMessage name="" />
+          </div>
+        </div>
       </div>
-      <!--end::Input group-->
 
-      <!--begin::Actions-->
+      <div class="fv-row mb-7">
+        <!--  <label class="form-label fw-bold text-dark fs-6">Email</label> -->
+        <Field
+          class="form-control form-control-lg form-control-solid"
+          type="text"
+          placeholder="Select Subscription"
+          name="subscription"
+          autocomplete="off"
+          as="select"
+          v-slot="{ value }"
+        >
+          <option value="" disabled>Select Subscription</option>
+          <option value="">1 month</option>
+          <option value="">2 months</option>
+          <option value="">3 months</option>
+          <option value="">4 months</option>
+          <option value="">5 months</option>
+        </Field>
+        <div class="fv-plugins-message-container">
+          <div class="fv-help-block">
+            <ErrorMessage name="" />
+          </div>
+        </div>
+      </div>
+
+
+      <div class="text-center fv-row mb-7">
+        <a href="/sign-in">
+          <button
+            style="width: 100%; background-color: #ffc007; color: black"
+            class="btn btn-lg btn-primary"
+          >
+            <span class="indicator-label"> Cancel </span>
+            <span class="indicator-progress">
+              Please wait...
+              <span
+                class="spinner-border spinner-border-sm align-middle ms-2"
+              ></span>
+            </span>
+          </button>
+        </a>
+      </div>
+
       <div class="text-center">
         <button
           id="kt_sign_up_submit"
           ref="submitButton"
           type="submit"
+          style="width: 100%"
           class="btn btn-lg btn-primary"
         >
-          <span class="indicator-label"> Submit </span>
+          <span class="indicator-label"> Add SME </span>
           <span class="indicator-progress">
             Please wait...
             <span
@@ -213,7 +180,15 @@
       </div>
       <!--end::Actions-->
     </VForm>
+
     <!--end::Form-->
+    <div
+      class="text-gray-400 fw-semobold fs-4"
+      style="font-weight: 400;!important; font-size: 13px !important; text-align: center;  margin-top: 20px"
+    >
+      do you have an account yet?
+      <a style="color: #3699ff" href="/#/sign-in">sign in</a>
+    </div>
   </div>
   <!--end::Wrapper-->
 </template>
