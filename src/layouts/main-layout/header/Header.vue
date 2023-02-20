@@ -32,7 +32,7 @@
         <a href="#" class="d-lg-none">
           <img
             alt="Logo"
-            :src="getAssetPath('media/logos/Group 25.png')"
+            :src="getAssetPath('media/logos/Group 25.svg')"
             class="h-30px"
           />
         </a>

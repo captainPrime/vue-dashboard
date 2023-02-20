@@ -53,7 +53,7 @@
             <!--begin::Header-->
             <div class="mb-7">
               <div class="d-flex flex-stack">
-                <h3 class="mb-0">Metronic Licenses</h3>
+                <h3 class="mb-0">Ared Licenses</h3>
 
                 <a
                   href="https://themeforest.net/licenses/standard"

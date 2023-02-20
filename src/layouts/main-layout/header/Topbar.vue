@@ -15,7 +15,7 @@
         data-kt-menu-placement="bottom-end"
         data-kt-menu-flip="bottom"
       >
-        <img :src="getAssetPath('media/avatars/300-1.jpg')" alt="metronic" />
+        <img :src="getAssetPath('media/avatars/300-1.jpg')" alt="ared" />
       </div>
       <KTUserMenu></KTUserMenu>
       <!--end::Menu-->

@@ -12,13 +12,14 @@
     data-kt-drawer-toggle="#kt_aside_mobile_toggle"
   >
     <!--begin::Brand-->
-    <div class="aside-logo py-8" id="kt_aside_logo">
+    <div class="aside-logo py-8" id="kt_aside_logo" style="background-color: white !important; height: 113px !important">
       <!--begin::Logo-->
-      <router-link to="/dashboard" class="d-flex align-items-center">
+      <router-link to="/dashboard" class="d-flex align-items-center" style="">
         <img
           alt="Logo"
-          :src="getAssetPath('media/logos/Group 25.png')"
+          :src="getAssetPath('media/logos/Group 25.svg')"
           class="h-45px logo"
+          style="width: 70px; height: 60px !important"
         />
       </router-link>
       <!--end::Logo-->
@@ -26,36 +27,14 @@
     <!--end::Brand-->
 
     <!--begin::Aside menu-->
-    <div class="aside-menu flex-column-fluid" id="kt_aside_menu">
+    <div class="aside-menu flex-column-fluid" id="kt_aside_menu" style="background-color: #F4F4F5; border-right: solid 2px #EAEAEE">
+      <h2 style="padding: 30px 10px 10px 10px; text-align: center; color: #888889">Actions </h2>
       <KTMenu />
     </div>
     <!--end::Aside menu-->
 
     <!--begin::Footer-->
-    <div class="aside-footer flex-column-auto" id="kt_aside_footer">
-      <!--begin::Menu-->
-      <div class="d-flex justify-content-center">
-        <button
-          type="button"
-          class="btn btm-sm btn-icon btn-active-color-primary"
-          data-kt-menu-trigger="click"
-          data-kt-menu-overflow="true"
-          data-kt-menu-placement="top-start"
-          data-bs-toggle="tooltip"
-          data-bs-placement="right"
-          data-bs-dismiss="click"
-          title="Quick actions"
-        >
-          <span class="svg-icon svg-icon-1">
-            <inline-svg
-              :src="getAssetPath('media/icons/duotune/general/gen008.svg')"
-            />
-          </span>
-        </button>
-        <Dropdown2 />
-      </div>
-      <!--end::Menu-->
-    </div>
+    
     <!--end::Footer-->
   </div>
   <!--end::Aside-->

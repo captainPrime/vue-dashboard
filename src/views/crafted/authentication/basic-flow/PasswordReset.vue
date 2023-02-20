@@ -24,11 +24,11 @@
 
       <!--begin::Input group-->
       <div class="fv-row mb-10">
-        <label class="form-label fw-bold text-gray-900 fs-6">Email</label>
+       <!--  <label class="form-label fw-bold text-gray-900 fs-6">Email</label> -->
         <Field
           class="form-control form-control-solid"
           type="email"
-          placeholder=""
+          placeholder="Email"
           name="email"
           autocomplete="off"
         />

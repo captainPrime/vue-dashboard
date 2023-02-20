@@ -1,5 +1,5 @@
 {
-  "name": "demo6",
+  "name": "ARED",
   "version": "8.1.7",
   "private": true,
   "scripts": {
@@ -38,6 +38,7 @@
     "prism-themes": "^1.9.0",
     "prismjs": "^1.25.0",
     "quill": "^1.3.6",
+    "react-native-simple-toast": "^2.0.0",
     "socicon": "^3.0.5",
     "sweetalert2": "^11.6.8",
     "vee-validate": "^4.5.11",

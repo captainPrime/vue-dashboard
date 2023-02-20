@@ -16,7 +16,7 @@
         <!--end::Title-->
 
         <!--begin::Link-->
-        <div class="text-gray-400 fw-semobold fs-4">
+        <div class="text-gray-400 fw-semobold fs-4" style="font-weight: 600; color: #468365 !important;">
           ARED SME Platform
         </div>
         <!--end::Link-->
@@ -26,7 +26,7 @@
       <!--begin::Input group-->
       <div class="fv-row mb-10">
         <!--begin::Label-->
-        <label class="form-label fs-6 fw-bold text-dark">Email</label>
+        <!-- <label class="form-label fs-6 fw-bold text-dark">Email</label> -->
         <!--end::Label-->
 
         <!--begin::Input-->
@@ -36,6 +36,7 @@
           type="text"
           name="email"
           autocomplete="off"
+          placeholder="email"
         />
         <!--end::Input-->
         <div class="fv-plugins-message-container">
@@ -51,15 +52,14 @@
         <!--begin::Wrapper-->
         <div class="d-flex flex-stack mb-2">
           <!--begin::Label-->
-          <label class="form-label fw-bold text-dark fs-6 mb-0">Password</label>
+         <!--  <label class="form-label fw-bold text-dark fs-6 mb-0">Password</label> -->
           <!--end::Label-->
 
           <!--begin::Link-->
-          <router-link to="/password-reset" class="link-primary fs-6 fw-bold">
-            Forgot Password ?
-          </router-link>
+         
           <!--end::Link-->
         </div>
+        
         <!--end::Wrapper-->
 
         <!--begin::Input-->
@@ -69,13 +69,18 @@
           type="password"
           name="password"
           autocomplete="off"
+          placeholder="password"
         />
+        <router-link to="/password-reset" class="link-primary fs-6 fw-bold" style="margin-bottom: 30px; margin-top: 10px; float: right !important; color: #3699FF !important">
+          Forgot Password ?
+        </router-link>
         <!--end::Input-->
         <div class="fv-plugins-message-container">
           <div class="fv-help-block">
             <ErrorMessage name="password" />
           </div>
         </div>
+        
       </div>
       <!--end::Input group-->
 
@@ -89,7 +94,7 @@
           id="kt_sign_in_submit"
           class="btn btn-lg btn-primary w-100 mb-5"
         >
-          <span class="indicator-label"> Continue </span>
+          <span class="indicator-label"> login </span>
 
           <span class="indicator-progress">
             Please wait...
@@ -104,6 +109,10 @@
       </div>
       <!--end::Actions-->
     </VForm>
+
+    <div class="text-gray-400 fw-semobold fs-4" style="font-weight: 400;!important; font-size: 13px !important; text-align: center">
+     do you have an account yet? <a  style="color: #3699FF" href="/#/sign-up">sign up</a>
+    </div>
     <!--end::Form-->
   </div>
   <!--end::Wrapper-->

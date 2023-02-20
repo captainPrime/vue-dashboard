@@ -12,45 +12,45 @@ export interface MenuItem {
 
 const MainMenuConfig: Array<MenuItem> = [
   {
-    heading: "Router",
+    heading: "Router", 
     route: "/dashboard",
-    svgIcon: getAssetPath("media/icons/duotune/general/voucher.png"),
+    svgIcon: getAssetPath("media/icons/duotune/general/router.svg"),
     fontIcon: "bi-house fs-2",
   },
   {
     heading: "Voucher",
     route: "/builder",
-    svgIcon: getAssetPath("media/icons/duotune/general/router.png"),
+    svgIcon: getAssetPath("media/icons/duotune/general/voucher.svg"),
     fontIcon: "bi-layers",
   },
   {
     heading: "Captive Portal",
     route: "/captive-portal",
-    svgIcon: getAssetPath("media/icons/duotune/general/cp.png"),
+    svgIcon: getAssetPath("media/icons/duotune/general/cp.svg"),
     fontIcon: "bi-layers",
   },
   {
     heading: "Files",
     route: "/files",
-    svgIcon: getAssetPath("media/icons/duotune/general/file.png"),
+    svgIcon: getAssetPath("media/icons/duotune/general/file.svg"),
     fontIcon: "bi-layers",
   },
   {
     heading: "Support",
     route: "/support",
-    svgIcon: getAssetPath("media/icons/duotune/general/support.png"),
+    svgIcon: getAssetPath("media/icons/duotune/general/support.svg"),
     fontIcon: "bi-layers",
   },
   {
     heading: "Billing",
     route: "/billings",
-    svgIcon: getAssetPath("media/icons/duotune/general/billing.png"),
+    svgIcon: getAssetPath("media/icons/duotune/general/billing.svg"),
     fontIcon: "bi-layers",
   },
   {
     heading: "Account",
     route: "/profile",
-    svgIcon: getAssetPath("media/icons/duotune/general/gen010.svg"),
+    svgIcon: getAssetPath("media/icons/duotune/general/acc.svg"),
     fontIcon: "bi-layers",
   },
 
