@@ -1,7 +1,11 @@
 <template>
   <div>
+    <!--begin::Tables Widget 9-->
     <PageTitle />
+    <!--begin::Tables Widget 9-->
+
     <div class="card" :class="widgetClasses" style="margin-top: 30px">
+      <!--begin::Header-->
       <div v-if="loading">
         <div class="spinner-border text-primary" role="status">
           <span class="visually-hidden">Loading...</span>
@@ -41,10 +45,14 @@
             </h3>
 
             <div class="card-body py-3">
+              <!--begin::Table container-->
               <div class="table-responsive">
+                <!--begin::Table-->
+
                 <table
                   class="table table-row-dashed table-row-gray-300 align-middle gs-0 gy-4"
                 >
+                  <!--begin::Table head-->
                   <thead>
                     <tr class="fw-bold text-muted">
                       <th class="w-25px">
@@ -144,9 +152,12 @@
                       </tr>
                     </template>
                   </tbody>
+                  <!--end::Table body-->
                 </table>
               </div>
+              <!--end::Table-->
             </div>
+            <!--end::Table container-->
           </div>
         </div>
       </div>
