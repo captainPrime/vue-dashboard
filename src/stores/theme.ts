@@ -16,8 +16,6 @@ export const useThemeStore = defineStore("theme", () => {
     localStorage.setItem(THEME_MODE_LS_KEY, payload);
     localStorage.setItem(THEME_MENU_MODE_LS_KEY, payload);
     document.documentElement.setAttribute("data-bs-theme", payload);
-    ThemeModeComponent.init();
-    mode.value = payload;
   }
 
   return {

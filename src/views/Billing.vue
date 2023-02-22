@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!--begin::Tables Widget 9-->
     <PageTitle />
   <div class="row gy-5 g-xl-8" style="margin-top: 30px">
    
