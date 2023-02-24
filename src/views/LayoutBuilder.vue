@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!--begin::Tables Widget 9-->
     <PageTitle />
     <Button
       class="btn btn-primary"
@@ -9,7 +8,6 @@
     >
       + Generate new voucher (s)</Button
     >
-    <!--begin::Tables Widget 9-->
     <div class="card" :class="widgetClasses" style="margin-top: 30px">
       <div v-if="loading">
         <div class="spinner-border text-primary" role="status">
@@ -17,7 +15,6 @@
         </div>
       </div>
       <div v-if="!loading">
-        <!--begin::Header-->
         <div class="card-header border-0 pt-5">
           <h3 class="card-title align-items-start flex-column">
             <span class="card-label fw-bold fs-3 mb-1">Vouchers</span>
@@ -27,17 +24,11 @@
             >
           </h3>
         </div>
-        <!--end::Header-->
-
-        <!--begin::Body-->
         <div class="card-body py-3">
-          <!--begin::Table container-->
           <div class="table-responsive">
-            <!--begin::Table-->
             <table
               class="table table-row-dashed table-row-gray-300 align-middle gs-0 gy-4"
             >
-              <!--begin::Table head-->
               <thead>
                 <tr class="fw-bold text-muted">
                   <th class="w-25px">
@@ -62,9 +53,6 @@
                   <th class="min-w-100px text-end">ACTION</th>
                 </tr>
               </thead>
-              <!--end::Table head-->
-
-              <!--begin::Table body-->
               <tbody>
                 <template v-for="(item, index) in list" :key="id">
                   <tr>
@@ -151,16 +139,11 @@
                   </tr>
                 </template>
               </tbody>
-              <!--end::Table body-->
             </table>
-            <!--end::Table-->
           </div>
-          <!--end::Table container-->
         </div>
       </div>
-      <!--begin::Body-->
     </div>
-    <!--end::Tables Widget 9-->
   </div>
 </template>
 
@@ -168,14 +151,7 @@
 import { getAssetPath } from "@/core/helpers/assets";
 import PageTitle from "@/layouts/main-layout/page-title/PageTitle.vue";
 import { defineComponent, onMounted, ref } from "vue";
-import { config } from "@/core/helpers/config";
-import CodeHighlighter from "@/components/highlighters/CodeHighlighter.vue";
-import { themeName } from "@/core/helpers/documentation";
-import { LS_CONFIG_NAME_KEY } from "@/stores/config";
 import axios from "axios";
-
-const LS_BUILDER_TAB_NAME =
-  "layoutBuilderTabIndex_" + import.meta.env.VITE_APP_DEMO;
 
 export default defineComponent({
   name: "layout-builder",

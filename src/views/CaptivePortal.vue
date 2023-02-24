@@ -1,8 +1,6 @@
 <template>
   <div>
-    <!--begin::Tables Widget 9-->
     <PageTitle />
-    <!--begin::Tables Widget 9-->
 
     <div class="card" :class="widgetClasses" style="margin-top: 30px">
       <!--begin::Header-->
@@ -45,14 +43,10 @@
             </h3>
 
             <div class="card-body py-3">
-              <!--begin::Table container-->
               <div class="table-responsive">
-                <!--begin::Table-->
-
                 <table
                   class="table table-row-dashed table-row-gray-300 align-middle gs-0 gy-4"
                 >
-                  <!--begin::Table head-->
                   <thead>
                     <tr class="fw-bold text-muted">
                       <th class="w-25px">
@@ -196,13 +190,6 @@
 import { getAssetPath } from "@/core/helpers/assets";
 import { defineComponent, onMounted, ref } from "vue";
 import PageTitle from "@/layouts/main-layout/page-title/PageTitle.vue";
-import { config } from "@/core/helpers/config";
-import CodeHighlighter from "@/components/highlighters/CodeHighlighter.vue";
-import { themeName } from "@/core/helpers/documentation";
-import { LS_CONFIG_NAME_KEY } from "@/stores/config";
-
-const LS_BUILDER_TAB_NAME =
-  "layoutBuilderTabIndex_" + import.meta.env.VITE_APP_DEMO;
 
 export default defineComponent({
   name: "captive-portal-d",
