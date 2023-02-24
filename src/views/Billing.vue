@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!--begin::Tables Widget 9-->
     <PageTitle />
   <div class="row gy-5 g-xl-8" style="margin-top: 30px">
    
@@ -37,7 +36,7 @@ export default defineComponent({
   },
   mounted() {
     console.log("fetching files...");
-    fetch("https://dev.api.shirikihub.com/api/v1/routers/")
+    fetch("https://dev.api.shirikihub.com/api/v1/billings/")
       .then((response) => response.json())
       .then((data) => {
         this.list = data.results;

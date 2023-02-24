@@ -3,29 +3,24 @@
     <PageTitle />
 
     <div class="card" style="margin-top: 30px">
-      <!--begin::Header-->
       <div class="card-header border-0 pt-5">
         <h3 class="card-title align-items-start flex-column">
           <span class="card-label fw-bold fs-3 mb-1">Support</span>
         </h3>
       </div>
 
-      <div class="card"  style="margin-top: 30px">
+      <div class="card" style="margin-top: 30px">
         <div v-if="loading">
           <div class="spinner-border text-primary" role="status">
             <span class="visually-hidden">Loading...</span>
           </div>
         </div>
         <div v-if="!loading">
-          <!--begin::Body-->
           <div class="card-body py-3">
-            <!--begin::Table container-->
             <div class="table-responsive">
-              <!--begin::Table-->
               <table
                 class="table table-row-dashed table-row-gray-300 align-middle gs-0 gy-4"
               >
-                <!--begin::Table head-->
                 <thead>
                   <tr class="fw-bold text-muted">
                     <th class="w-25px">
@@ -50,9 +45,6 @@
                     <th class="min-w-100px text-end">ACTION</th>
                   </tr>
                 </thead>
-                <!--end::Table head-->
-
-                <!--begin::Table body-->
                 <tbody>
                   <template v-for="(item, index) in list" :key="id">
                     <tr>
@@ -119,34 +111,28 @@
                     </tr>
                   </template>
                 </tbody>
-                <!--end::Table body-->
               </table>
-              <!--end::Table-->
             </div>
-            <!--end::Table container-->
           </div>
-          <!--begin::Body-->
         </div>
       </div>
     </div>
 
     <div class="row" style="margin-top: 20px">
-
       <div class="col-6 py-3" style="padding: 10px">
-        <div class="card" >
+        <div class="card">
           <div class="card-header border-0 pt-5">
             <h3 class="card-title align-items-start flex-column">
-              <span class="card-label fw-bold fs-3 mb-1">Router Department</span>
+              <span class="card-label fw-bold fs-3 mb-1"
+                >Router Department</span
+              >
             </h3>
           </div>
           <div class="card-body py-3">
-            <!--begin::Table container-->
             <div class="table-responsive">
-              <!--begin::Table-->
               <table
                 class="table table-row-dashed table-row-gray-300 align-middle gs-0 gy-4"
               >
-                <!--begin::Table head-->
                 <thead>
                   <tr class="fw-bold text-muted">
                     <th class="w-25px">
@@ -172,7 +158,7 @@
                   </tr>
                 </thead>
                 <!--end::Table head-->
-  
+
                 <!--begin::Table body-->
                 <tbody>
                   <template v-for="(item, index) in list" :key="id">
@@ -189,7 +175,7 @@
                           />
                         </div>
                       </td>
-  
+
                       <td>
                         <a
                           href="#"
@@ -197,7 +183,7 @@
                           >{{ item.ticket_id }}</a
                         >
                       </td>
-  
+
                       <td>
                         <a
                           href="#"
@@ -205,7 +191,7 @@
                           >{{ item.created }}</a
                         >
                       </td>
-  
+
                       <td>
                         <a
                           href="#"
@@ -213,7 +199,7 @@
                           >{{ item.status }}</a
                         >
                       </td>
-  
+
                       <td>
                         <a
                           href="#"
@@ -240,133 +226,122 @@
                     </tr>
                   </template>
                 </tbody>
-                <!--end::Table body-->
               </table>
-              <!--end::Table-->
             </div>
-            <!--end::Table container-->
           </div>
         </div>
       </div>
-    
-      <div class="col-6 py-3" style="padding: 10px">
-      <div class="card">
-        <div class="card-header border-0 pt-5">
-          <h3 class="card-title align-items-start flex-column">
-            <span class="card-label fw-bold fs-3 mb-1">Others</span>
-          </h3>
-        </div>
-        <div class="card-body py-3">
-          <!--begin::Table container-->
-          <div class="table-responsive">
-            <!--begin::Table-->
-            <table
-              class="table table-row-dashed table-row-gray-300 align-middle gs-0 gy-4"
-            >
-              <!--begin::Table head-->
-              <thead>
-                <tr class="fw-bold text-muted">
-                  <th class="w-25px">
-                    <div
-                      class="form-check form-check-sm form-check-custom form-check-solid"
-                    >
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        @change="
-                          checkedRows.length === 6
-                            ? (checkedRows.length = 0)
-                            : (checkedRows = [0, 1, 2, 3, 4, 5])
-                        "
-                      />
-                    </div>
-                  </th>
-                  <th class="min-w-150px">Ticket ID</th>
-                  <th class="min-w-140px">Message</th>
-                  <th class="min-w-120px">Created</th>
-                  <th class="min-w-100px">Status</th>
-                  <th class="min-w-100px text-end">ACTION</th>
-                </tr>
-              </thead>
-              <!--end::Table head-->
 
-              <!--begin::Table body-->
-              <tbody>
-                <template v-for="(item, index) in list" :key="id">
-                  <tr>
-                    <td>
+      <div class="col-6 py-3" style="padding: 10px">
+        <div class="card">
+          <div class="card-header border-0 pt-5">
+            <h3 class="card-title align-items-start flex-column">
+              <span class="card-label fw-bold fs-3 mb-1">Others</span>
+            </h3>
+          </div>
+          <div class="card-body py-3">
+            <div class="table-responsive">
+              <table
+                class="table table-row-dashed table-row-gray-300 align-middle gs-0 gy-4"
+              >
+                <thead>
+                  <tr class="fw-bold text-muted">
+                    <th class="w-25px">
                       <div
                         class="form-check form-check-sm form-check-custom form-check-solid"
                       >
                         <input
-                          class="form-check-input widget-9-check"
+                          class="form-check-input"
                           type="checkbox"
-                          :value="index"
-                          v-model="checkedRows"
+                          @change="
+                            checkedRows.length === 6
+                              ? (checkedRows.length = 0)
+                              : (checkedRows = [0, 1, 2, 3, 4, 5])
+                          "
                         />
                       </div>
-                    </td>
-
-                    <td>
-                      <a
-                        href="#"
-                        class="text-dark fw-bold text-hover-primary d-block fs-6"
-                        >{{ item.created }}</a
-                      >
-                    </td>
-                    <td>
-                      <a
-                        href="#"
-                        class="text-dark fw-bold text-hover-primary d-block fs-6"
-                        >{{ item.ticket_id }}</a
-                      >
-                    </td>
-
-                    <td>
-                      <a
-                        href="#"
-                        class="text-dark fw-bold text-hover-primary d-block fs-6"
-                        >{{ item.status }}</a
-                      >
-                    </td>
-
-                    <td>
-                      <a
-                        href="#"
-                        class="text-dark fw-bold text-hover-primary d-block fs-6"
-                        >{{ item.status }}</a
-                      >
-                    </td>
-                    <td class="text-end">
-                      <a
-                        href="#"
-                        class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm"
-                      >
-                        <span class="svg-icon svg-icon-3">
-                          <inline-svg
-                            :src="
-                              getAssetPath(
-                                '/media/icons/duotune/general/gen027.svg'
-                              )
-                            "
-                          />
-                        </span>
-                      </a>
-                    </td>
+                    </th>
+                    <th class="min-w-150px">Ticket ID</th>
+                    <th class="min-w-140px">Message</th>
+                    <th class="min-w-120px">Created</th>
+                    <th class="min-w-100px">Status</th>
+                    <th class="min-w-100px text-end">ACTION</th>
                   </tr>
-                </template>
-              </tbody>
-              <!--end::Table body-->
-            </table>
-            <!--end::Table-->
+                </thead>
+                <!--end::Table head-->
+
+                <!--begin::Table body-->
+                <tbody>
+                  <template v-for="(item, index) in list" :key="id">
+                    <tr>
+                      <td>
+                        <div
+                          class="form-check form-check-sm form-check-custom form-check-solid"
+                        >
+                          <input
+                            class="form-check-input widget-9-check"
+                            type="checkbox"
+                            :value="index"
+                            v-model="checkedRows"
+                          />
+                        </div>
+                      </td>
+
+                      <td>
+                        <a
+                          href="#"
+                          class="text-dark fw-bold text-hover-primary d-block fs-6"
+                          >{{ item.created }}</a
+                        >
+                      </td>
+                      <td>
+                        <a
+                          href="#"
+                          class="text-dark fw-bold text-hover-primary d-block fs-6"
+                          >{{ item.ticket_id }}</a
+                        >
+                      </td>
+
+                      <td>
+                        <a
+                          href="#"
+                          class="text-dark fw-bold text-hover-primary d-block fs-6"
+                          >{{ item.status }}</a
+                        >
+                      </td>
+
+                      <td>
+                        <a
+                          href="#"
+                          class="text-dark fw-bold text-hover-primary d-block fs-6"
+                          >{{ item.status }}</a
+                        >
+                      </td>
+                      <td class="text-end">
+                        <a
+                          href="#"
+                          class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm"
+                        >
+                          <span class="svg-icon svg-icon-3">
+                            <inline-svg
+                              :src="
+                                getAssetPath(
+                                  '/media/icons/duotune/general/gen027.svg'
+                                )
+                              "
+                            />
+                          </span>
+                        </a>
+                      </td>
+                    </tr>
+                  </template>
+                </tbody>
+              </table>
+            </div>
           </div>
-          <!--end::Table container-->
         </div>
       </div>
-      </div>
-
     </div>
-    <!--end::Tables Widget 9-->
   </div>
 </template>
 
@@ -399,7 +374,6 @@ export default defineComponent({
       getAssetPath,
     };
   },
-
   mounted() {
     this.fetchEndpointData();
   },
@@ -408,7 +382,7 @@ export default defineComponent({
       try {
         console.log("fetching files...");
         const response = await axios.get(
-          "https://dev.api.shirikihub.com/api/v1/files/"
+          "https://dev.api.shirikihub.com/api/v1/support/"
         );
         this.list = response.data;
         this.loading = false;
