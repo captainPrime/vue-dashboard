@@ -35,32 +35,19 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import StatisticsWidget5 from "@/components/widgets/statsistics/Widget5.vue";
 import PageTitle from "@/layouts/main-layout/page-title/PageTitle.vue";
 import Widget3 from "@/components/widgets/charts/Widget3.vue";
 import MixedWidget4 from "@/components/widgets/mixed/Widget4.vue";
-import MixedWidget5 from "@/components/widgets/mixed/Widget5.vue";
-import ListsWidget7 from "@/components/widgets/lists/Widget7.vue";
 import TablesWidget9 from "@/components/widgets/tables/Widget9.vue";
-import ListsWidget4 from "@/components/widgets/lists/Widget4.vue";
-import ListsWidget5 from "@/components/widgets/lists/Widget5.vue";
-import ListsWidget3 from "@/components/widgets/lists/Widget3.vue";
-import TablesWidget10 from "@/components/widgets/tables/Widget10.vue";
+
 
 export default defineComponent({
   name: "dashboard-main",
   components: {
-    StatisticsWidget5,
     Widget3,
     PageTitle,
     MixedWidget4,
-    MixedWidget5,
-    ListsWidget7,
     TablesWidget9,
-    ListsWidget4,
-    ListsWidget5,
-    ListsWidget3,
-    TablesWidget10,
   },
 });
 </script>
