@@ -7,7 +7,7 @@
       id="kt_login_signin_form"
       @submit="onSubmitLogin"
       :validation-schema="login"
-      :initial-values="{ email: 'admin@demo.com', password: 'demo' }"
+      :initial-values="{ phone: 'tolu@fiatmatch.com', password: 'OkzMObX1' }"
     >
       <!--begin::Heading-->
       <div class="text-center mb-10">
